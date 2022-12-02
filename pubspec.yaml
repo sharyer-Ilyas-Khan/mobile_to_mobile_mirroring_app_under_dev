@@ -1,0 +1,54 @@
+name: mobile_to_mobile_mirroring_app
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=2.18.5 <3.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.2
+  get: 4.6.5
+  flutter_svg: ^1.1.6
+  flutter_launcher_icons: ^0.11.0
+  change_app_package_name: ^1.1.0
+  dio: ^4.0.6
+  lottie: ^1.4.3
+  share_plus: ^4.4.0
+  store_checker: ^1.1.0
+  flutter_rating_bar: ^4.0.1
+  in_app_review: ^2.0.6
+
+  flutter: 
+    sdk: flutter
+
+dev_dependencies: 
+  flutter_lints: 2.0.1
+  flutter_test: 
+    sdk: flutter
+flutter_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "Assets/icon/icon.jpg"
+  min_sdk_android: 21
+
+
+
+
+flutter: 
+  uses-material-design: true
+  assets:
+    - Assets/images/
+    - Assets/svg/
+    - Assets/icon/
+    - Assets/lottie/
+
+
+    # example:
+  fonts:
+      - family: montr
+        fonts:
+          - asset: Assets/font/montr.ttf
+      - family: montb
+        fonts:
+          - asset: Assets/font/montb.ttf
+
