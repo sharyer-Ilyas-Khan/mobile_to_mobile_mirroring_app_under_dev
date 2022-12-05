@@ -5,8 +5,8 @@ import '../controllers/share_screen_controller.dart';
 class ShareScreenBinding extends Bindings {
   @override
   void dependencies() {
-    Get.lazyPut<ShareScreenController>(
-      () => ShareScreenController(),
+    Get.put(
+      ShareScreenController(),
     );
   }
 }

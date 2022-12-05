@@ -8,4 +8,5 @@ abstract class AppColors{
    static const Color rainYellowColor= Color(0xffF2B707);
    static const Color rainGreenColor = Color(0xff30AB53);
    static const Color rainBlueColor= Color(0xff226FF2);
+   static const Color darkBlue= Color(0xff038FF4);
 }

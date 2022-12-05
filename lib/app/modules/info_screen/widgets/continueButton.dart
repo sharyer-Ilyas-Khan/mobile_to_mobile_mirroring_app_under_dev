@@ -23,7 +23,7 @@ class ContinueButton extends StatelessWidget {
         height: 46,
         width: 200,
         decoration: BoxDecoration(
-          color: AppColors.primaryColor,
+          color: AppColors.darkBlue,
           borderRadius: BorderRadius.circular(5),
           boxShadow: const [
             BoxShadow(

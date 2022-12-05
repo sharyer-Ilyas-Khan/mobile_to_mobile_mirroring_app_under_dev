@@ -18,7 +18,7 @@ class InfoTiles extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const Spacer(),
-            const Icon(Icons.circle,color: AppColors.primaryColor,size: 10,),
+            const Icon(Icons.circle,color: AppColors.darkBlue,size: 10,),
             const Spacer(),
             SizedBox(
               width: Get.width*0.8,

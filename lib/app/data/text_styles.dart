@@ -94,3 +94,10 @@ const infoTileHeading=TextStyle(
     fontWeight: FontWeight.w700,
     letterSpacing: 0.0
 );
+const appBarHeading=TextStyle(
+    fontSize: 16,
+    color:Colors.white,
+    fontFamily: "montb",
+    fontWeight: FontWeight.w700,
+    letterSpacing: 0.0
+);

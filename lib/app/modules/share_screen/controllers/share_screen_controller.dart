@@ -4,6 +4,7 @@ class ShareScreenController extends GetxController {
   //TODO: Implement ShareScreenController
 
   final count = 0.obs;
+  RxBool switchValue = false.obs;
   @override
   void onInit() {
     super.onInit();
@@ -20,4 +21,12 @@ class ShareScreenController extends GetxController {
   }
 
   void increment() => count.value++;
+  void toggle(){
+    if(switchValue.value==true){
+      switchValue.value=false;
+    }
+    else{
+      switchValue.value=true;
+    }
+  }
 }
