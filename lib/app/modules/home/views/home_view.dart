@@ -59,7 +59,7 @@ class HomeView extends GetView<HomeController> {
           const Expanded(
             flex: 2,
               child: AccessCode()),
-          Expanded(
+                Expanded(
             flex: 2,
               child: Container(
                 color: Colors.amber,

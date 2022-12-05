@@ -7,79 +7,77 @@ class WifiQrScanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Stack(
-          children: [
-          Container(
-            height: 100,
-            color: Colors.white,
-          ),
+    return Center(
+      child: Stack(
+        children: [
+        Container(
+          height: 100,
+          color: Colors.white,
+        ),
 
-            //Title bar
-            Positioned(
-              left: 0,
-              top: 0,
-              bottom: 0,
-              width: Get.width/1.2,
-              // height: 70,
-              child: Padding(
-                padding: const EdgeInsets.only(left: 20.0,right: 12.0,top: 15.0,bottom: 15.0),
-                child: Container(
-                  decoration: const BoxDecoration(
-                    color: AppColors.primaryColor,
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black12,
-                        blurRadius: 2,
-                        spreadRadius: 4,
-                        offset: Offset(0, 2)
-                      )
-                    ]
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 20.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children:const  [
-                        Text("WIFI QR SCANNER.",style: wifiButtonHeading,),
-                        Text("One Tap to scan",style: wifiButtonSubHeading,),
-                      ],
-                    ),
-                  ),
-
-                ),
-              ),
-            ),
-            //Circle with qr icon
-            Positioned(
-              right: 10,
-              top: 0,
-              bottom: 0,
-              width: 100,
+          //Title bar
+          Positioned(
+            left: 0,
+            top: 0,
+            bottom: 0,
+            width: Get.width/1.2,
+            // height: 70,
+            child: Padding(
+              padding: const EdgeInsets.only(left: 20.0,right: 12.0,top: 15.0,bottom: 15.0),
               child: Container(
                 decoration: const BoxDecoration(
-                  color: Colors.white,
-                  shape: BoxShape.circle
+                  color: AppColors.primaryColor,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black12,
+                      blurRadius: 2,
+                      spreadRadius: 4,
+                      offset: Offset(0, 2)
+                    )
+                  ]
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Container(
-                    decoration: const BoxDecoration(
-                        color: AppColors.primaryColor,
-                        shape: BoxShape.circle
-                    ),
-                    child: const Center(
-                      child: Icon(Icons.qr_code_2_outlined,color: Colors.white,),
-                    ),
-
+                  padding: const EdgeInsets.only(left: 20.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children:const  [
+                      Text("WIFI QR SCANNER.",style: wifiButtonHeading,),
+                      Text("One Tap to scan",style: wifiButtonSubHeading,),
+                    ],
                   ),
+                ),
+
+              ),
+            ),
+          ),
+          //Circle with qr icon
+          Positioned(
+            right: 10,
+            top: 0,
+            bottom: 0,
+            width: 100,
+            child: Container(
+              decoration: const BoxDecoration(
+                color: Colors.white,
+                shape: BoxShape.circle
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  decoration: const BoxDecoration(
+                      color: AppColors.primaryColor,
+                      shape: BoxShape.circle
+                  ),
+                  child: const Center(
+                    child: Icon(Icons.qr_code_2,color: Colors.white,size: 40,),
+                  ),
+
                 ),
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

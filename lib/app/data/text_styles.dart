@@ -38,3 +38,24 @@ const  wifiButtonSubHeading=TextStyle(
     fontFamily: "montr",
     letterSpacing: 1.5
 );
+const  cardButtonText=TextStyle(
+    fontSize: 13,
+    color:AppColors.primaryColor,
+    fontFamily: "montb",
+    fontWeight: FontWeight.w900,
+    letterSpacing:1
+);
+const cardHeading=TextStyle(
+    fontSize: 14,
+    color:Colors.black,
+    fontFamily: "montb",
+    fontWeight: FontWeight.w900,
+    letterSpacing: 0.0
+);
+const cardSubHeading=TextStyle(
+    fontSize: 11,
+    color: Colors.black38,
+    fontFamily: "montr",
+    fontWeight: FontWeight.w900,
+    letterSpacing: 0.0
+);
