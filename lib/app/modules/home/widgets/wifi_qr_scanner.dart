@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:mobile_to_mobile_mirroring_app/app/data/colors_codes.dart';
 import 'package:mobile_to_mobile_mirroring_app/app/data/text_styles.dart';
@@ -69,8 +70,8 @@ class WifiQrScanner extends StatelessWidget {
                       color: AppColors.primaryColor,
                       shape: BoxShape.circle
                   ),
-                  child: const Center(
-                    child: Icon(Icons.qr_code_2,color: Colors.white,size: 40,),
+                  child:  Center(
+                    child: SvgPicture.asset("Assets/svg/qr.svg"),
                   ),
 
                 ),

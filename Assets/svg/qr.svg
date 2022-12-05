@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35.289" height="33.539" viewBox="0 0 35.289 33.539">
+  <g id="qr" transform="translate(-287.5 -100)">
+    <g id="Layer_1" transform="translate(288.5 101)">
+      <path id="Path_28370" data-name="Path 28370" d="M28.042,35.909h6.467c1.929,0,3.491-2.022,3.491-4.5V28.428M28.042,4.37h6.467C36.437,4.37,38,6.375,38,8.85v3m-33.288,0v-3c0-2.475,1.563-4.48,3.491-4.48h6.454M4.712,28.428v2.984c0,2.475,1.563,4.5,3.491,4.5h6.454" transform="translate(-4.712 -4.37)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="Path_28371" data-name="Path 28371" d="M28.042,35.909h6.467c1.929,0,3.491-2.022,3.491-4.5V28.428M28.042,4.37h6.467C36.437,4.37,38,6.375,38,8.85v3m-33.288,0v-3c0-2.475,1.563-4.48,3.491-4.48h6.454M4.712,28.428v2.984c0,2.475,1.563,4.5,3.491,4.5h6.454" transform="translate(-4.712 -4.37)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+      <line id="Line_36" data-name="Line 36" x2="33.288" transform="translate(0.001 14.77)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <g id="_9a2befb49d399e40e476bf6ad22c518e" data-name="9a2befb49d399e40e476bf6ad22c518e" transform="translate(293.565 105.342)">
+      <path id="Path_28372" data-name="Path 28372" d="M8.684,0H0V8.684H8.684ZM7.237,7.237H1.447V1.447H7.237Z" fill="#fff"/>
+      <path id="Path_28373" data-name="Path 28373" d="M2.895,2H5.789V4.895H2.895ZM0,22.263H8.684V13.579H0Zm1.447-7.237H7.237v5.79H1.447Z" transform="translate(0 0.895)" fill="#fff"/>
+      <path id="Path_28374" data-name="Path 28374" d="M2,17.369H4.895v2.895H2ZM13.579,0V8.684h8.684V0Zm7.237,7.237H15.026V1.447h5.789Z" transform="translate(0.895)" fill="#fff"/>
+      <path id="Path_28375" data-name="Path 28375" d="M17.368,2.895h2.895V5.79H17.368ZM2.895,10.132H0v2.895H4.342V11.579H2.895Zm7.237,2.895h2.895v2.895H10.131ZM4.342,10.132H7.237v1.447H4.342Zm8.684,7.237H10.131v1.447h1.447v1.447h1.447V17.369ZM8.684,10.132v1.447H7.237v1.447h2.895V10.132ZM11.579,5.79h1.447V8.684H11.579Zm1.447,5.79v1.447h2.895V10.132H11.579v1.447ZM10.131,8.684h1.447v1.447H10.131Zm2.895,11.579h2.895v2.895H13.026Zm-2.895,0h1.447v2.895H10.131Zm2.895-4.342h1.447v1.447H13.026Zm0-11.579V1.447H11.579V0H10.131V5.79h1.447V4.342Zm4.342,15.921h1.447v2.895H17.368Zm0-2.895h2.895v1.447H17.368Zm-1.447,1.447h1.447v1.447H15.921Zm-1.447-1.447h1.447v1.447H14.473Zm5.789-2.895v1.447H21.71v1.447h1.447V14.474H20.262Zm1.447,4.342H20.262v4.342h2.895V20.263H21.71Zm-7.237-4.342v1.447h4.342V13.027H15.921v1.447Zm2.895-4.342v1.447h2.895v1.447h2.895V10.132H17.368Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

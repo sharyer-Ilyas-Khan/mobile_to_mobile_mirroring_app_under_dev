@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 import 'package:mobile_to_mobile_mirroring_app/app/modules/access_screen/widgets/code_view.dart';
+import 'package:mobile_to_mobile_mirroring_app/app/modules/access_screen/widgets/connectButton.dart';
 import 'package:mobile_to_mobile_mirroring_app/app/modules/access_screen/widgets/share_audio_view.dart';
 
 import '../../../data/colors_codes.dart';
@@ -22,10 +24,15 @@ class AccessScreenView extends GetView<AccessScreenController> {
           centerTitle: true,
           automaticallyImplyLeading: false,
           leading: InkWell(
+            splashColor: Colors.transparent,
+            hoverColor: Colors.transparent,
             onTap: (){
               Get.back();
             },
-            child: const Icon(Icons.arrow_back_ios_outlined,color: Colors.black,),
+            child: Padding(
+              padding: const EdgeInsets.all(18.0),
+              child: SvgPicture.asset("Assets/svg/back_ic.svg",color: Colors.black,),
+            ),
           ),
           actions: [
             InkWell(

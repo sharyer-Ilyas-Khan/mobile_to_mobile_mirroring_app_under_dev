@@ -108,10 +108,26 @@ const readCodeTitle=TextStyle(
     fontFamily: "montr",
     fontWeight: FontWeight.w600,
     letterSpacing: 1.0
-);const codePinStyle=TextStyle(
+);
+const codePinStyle=TextStyle(
     fontSize: 25,
     color:Colors.black,
     fontFamily: "montb",
     fontWeight: FontWeight.w600,
     letterSpacing: 0.0
 );
+const codeOptions=TextStyle(
+    fontSize: 10,
+    color:Colors.grey,
+    fontFamily: "montr",
+    fontWeight: FontWeight.w600,
+    letterSpacing: 1.0
+);
+const sharingStarted=TextStyle(
+    fontSize: 14,
+    color:AppColors.rainGreenColor,
+    fontFamily: "montr",
+    fontWeight: FontWeight.w600,
+    letterSpacing: 1.0
+);
+

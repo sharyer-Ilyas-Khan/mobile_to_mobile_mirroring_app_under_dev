@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
@@ -23,7 +24,10 @@ class InfoScreenView extends GetView<InfoScreenController> {
             Get.back();
             // controller.backToHome();
           },
-          child: const Icon(Icons.arrow_back_ios_outlined,color: Colors.black,),
+          child: Padding(
+            padding: const EdgeInsets.all(18.0),
+            child: SvgPicture.asset("Assets/svg/back_ic.svg",color: Colors.black,),
+          ),
         ),
       ),
       body: Column(

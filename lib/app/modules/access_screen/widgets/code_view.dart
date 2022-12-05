@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:mobile_to_mobile_mirroring_app/app/modules/access_screen/widgets/connectButton.dart';
 import 'package:pinput/pinput.dart';
 import 'package:get/get.dart';
 import 'package:mobile_to_mobile_mirroring_app/app/data/colors_codes.dart';
@@ -15,12 +17,19 @@ class CodeGeneratedView extends StatelessWidget {
     AccessScreenController controller=Get.put(AccessScreenController());
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-       const  Padding(
-          padding:  EdgeInsets.only(top: 15.0,bottom: 15.0),
-          child:  Text("Share this generated code to other user",style:readCodeTitle,),
-        ),
+       Padding(
+         padding: const EdgeInsets.only(top: 15.0,bottom: 15.0,left: 20,right: 15),
+         child: Row(
+           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+           children: [
+           const   Text("Access remote device",style:readCodeTitle,),
+             InkWell(
+               child: SvgPicture.asset("Assets/svg/setting.svg",height: 22,),
+             )
+           ],
+         ),
+       ),
         Container(
           height: Get.height*0.18,
           width: Get.width*0.9,
@@ -37,26 +46,41 @@ class CodeGeneratedView extends StatelessWidget {
             children: [
               const Padding(
                 padding:  EdgeInsets.only(left: 14.0,bottom: 14.0),
-                child: Text("Your Code",style: cardHeading,),
-              ),
-              Center(
-                child: Pinput(
-                  controller: controller.pinController.value,
-                  defaultPinTheme: defaultPinTheme,
-                  //   focusedPinTheme: focusedPinTheme,
-                ),
+                child: Text("Paste access code here",style: cardHeading,),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  IconButton(onPressed:controller.copyCode, icon: Icon(Icons.copy,color: Colors.grey,)),
-                  IconButton(onPressed: controller.shareCode, icon: Icon(Icons.share,color: Colors.grey,)),
+                  const SizedBox(width: 40,),
+                  Pinput(
+                    controller: controller.pinController.value,
+                    defaultPinTheme: defaultPinTheme,
+                    //   focusedPinTheme: focusedPinTheme,
+                  ),
+                  const SizedBox(width: 10,),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: InkWell(
+                      onTap: controller.pasteCode,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Icon(Icons.copy,color: Colors.black54,size: 20,),
+                           Text("Paste",style:codeOptions,)
+                        ],
+                      ),
+                    ),
+                  )
                 ],
-              )
+              ),
+
             ],
           ),
 
         ),
+        const SizedBox(height: 30,),
+        const ConnectButton()
+
       ],
     );
   }

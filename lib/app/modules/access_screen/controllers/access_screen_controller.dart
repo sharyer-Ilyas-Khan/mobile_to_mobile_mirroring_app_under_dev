@@ -21,19 +21,22 @@ class AccessScreenController extends GetxController {
   void onClose() {
     super.onClose();
   }
-  void shareCode(){
-    Share.share("This is your Code : ${pinController.value.text}");
-  }
-  void copyCode(){
-    Clipboard.setData(ClipboardData(text:pinController.value.text));
-    Get.snackbar("Success","your code has been copied",
-        backgroundColor: Colors.black87,
-        snackPosition:SnackPosition.BOTTOM,
-        snackStyle: SnackStyle.FLOATING,
-        colorText: Colors.white
+  void pasteCode()async {
 
+    Clipboard.getData(Clipboard.kTextPlain).then((value){
+      if(value==null){
+        Get.snackbar("Failed","Nothing to paste",
+            backgroundColor: Colors.black87,
+            snackPosition:SnackPosition.BOTTOM,
+            snackStyle: SnackStyle.FLOATING,
+            colorText: Colors.white
+        );
+      }
+      else{
+        pinController.value.text= value.text.toString();
+      }
 
+    });
 
-    );
   }
 }

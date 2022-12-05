@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
@@ -22,10 +23,15 @@ class ShareScreenView extends GetView<ShareScreenController> {
         centerTitle: true,
         automaticallyImplyLeading: false,
         leading: InkWell(
+          splashColor: Colors.transparent,
+          hoverColor: Colors.transparent,
           onTap: (){
             Get.back();
           },
-          child: const Icon(Icons.arrow_back_ios_outlined,color: Colors.black,),
+          child:  Padding(
+            padding:  const EdgeInsets.all(18.0),
+            child: SvgPicture.asset("Assets/svg/back_ic.svg",color: Colors.black,),
+          ),
         ),
         actions: [
           InkWell(
