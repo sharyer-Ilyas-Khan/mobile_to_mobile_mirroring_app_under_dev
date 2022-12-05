@@ -14,6 +14,8 @@ class ShareScreenView extends GetView<ShareScreenController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         backgroundColor: AppColors.darkBlue,
         title: const Text('Share Screen',style: appBarHeading,),
@@ -38,7 +40,7 @@ class ShareScreenView extends GetView<ShareScreenController> {
       body: Column(
         children: [
            Expanded(child: AudioTile()),
-          Expanded(
+          const Expanded(
               flex: 5,
               child:CodeGeneratedView()),
           Expanded(

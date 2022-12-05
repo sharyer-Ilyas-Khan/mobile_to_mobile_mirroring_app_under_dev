@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:pinput/pinput.dart';
 
 import 'colors_codes.dart';
 
@@ -99,5 +100,18 @@ const appBarHeading=TextStyle(
     color:Colors.white,
     fontFamily: "montb",
     fontWeight: FontWeight.w700,
+    letterSpacing: 0.0
+);
+const readCodeTitle=TextStyle(
+    fontSize: 13,
+    color:Colors.black,
+    fontFamily: "montr",
+    fontWeight: FontWeight.w600,
+    letterSpacing: 1.0
+);const codePinStyle=TextStyle(
+    fontSize: 25,
+    color:Colors.black,
+    fontFamily: "montb",
+    fontWeight: FontWeight.w600,
     letterSpacing: 0.0
 );

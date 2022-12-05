@@ -5,14 +5,14 @@ import 'package:mobile_to_mobile_mirroring_app/app/data/colors_codes.dart';
 import 'package:mobile_to_mobile_mirroring_app/app/data/text_styles.dart';
 
 import '../../../data/themesData.dart';
-import '../controllers/share_screen_controller.dart';
+import '../controllers/access_screen_controller.dart';
 
 class CodeGeneratedView extends StatelessWidget {
   const CodeGeneratedView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    ShareScreenController controller=Get.put(ShareScreenController());
+    AccessScreenController controller=Get.put(AccessScreenController());
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -42,7 +42,6 @@ class CodeGeneratedView extends StatelessWidget {
               Center(
                 child: Pinput(
                   controller: controller.pinController.value,
-                  readOnly: true,
                   defaultPinTheme: defaultPinTheme,
                   //   focusedPinTheme: focusedPinTheme,
                 ),
