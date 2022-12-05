@@ -1,9 +1,13 @@
 import 'package:get/get.dart';
 
+import '../modules/access_screen/bindings/access_screen_binding.dart';
+import '../modules/access_screen/views/access_screen_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/info_screen/bindings/info_screen_binding.dart';
 import '../modules/info_screen/views/info_screen_view.dart';
+import '../modules/share_screen/bindings/share_screen_binding.dart';
+import '../modules/share_screen/views/share_screen_view.dart';
 import '../modules/splash/bindings/splash_binding.dart';
 import '../modules/splash/views/splash_view.dart';
 
@@ -29,6 +33,16 @@ class AppPages {
       name: _Paths.INFO_SCREEN,
       page: () => const InfoScreenView(),
       binding: InfoScreenBinding(),
+    ),
+    GetPage(
+      name: _Paths.SHARE_SCREEN,
+      page: () => const ShareScreenView(),
+      binding: ShareScreenBinding(),
+    ),
+    GetPage(
+      name: _Paths.ACCESS_SCREEN,
+      page: () => const AccessScreenView(),
+      binding: AccessScreenBinding(),
     ),
   ];
 }

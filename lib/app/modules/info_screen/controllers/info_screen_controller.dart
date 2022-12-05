@@ -1,13 +1,11 @@
-import 'dart:async';
-
 import 'package:get/get.dart';
 import 'package:mobile_to_mobile_mirroring_app/app/modules/home/views/home_view.dart';
 
-class SplashController extends GetxController {
+class InfoScreenController extends GetxController {
+  //TODO: Implement InfoScreenController
 
   @override
   void onInit() {
-     goToNextScreen();
     super.onInit();
   }
 
@@ -20,13 +18,7 @@ class SplashController extends GetxController {
   void onClose() {
     super.onClose();
   }
-
-  //void increment() => count.value++;
-
-  //goto home
-  void goToNextScreen() {
-    Timer(const Duration(seconds: 5), () {
-      Get.off(const HomeView());
-    });
-  }
+void backToHome(){
+    Get.back();
+}
 }

@@ -79,6 +79,6 @@ class AccessCode extends StatelessWidget {
     );
   }
   void goToInfoScreen(){
-    Get.off(const InfoScreenView());
+    Get.to(const InfoScreenView(tag: "access",));
   }
 }
