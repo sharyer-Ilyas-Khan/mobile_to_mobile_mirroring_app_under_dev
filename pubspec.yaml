@@ -18,6 +18,7 @@ dependencies:
   flutter_rating_bar: ^4.0.1
   in_app_review: ^2.0.6
   pinput: ^2.2.16
+  qr_code_scanner: ^1.0.1
 
   flutter: 
     sdk: flutter

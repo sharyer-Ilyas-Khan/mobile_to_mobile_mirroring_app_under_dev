@@ -159,3 +159,10 @@ const premiumSubHeading=TextStyle(
     fontWeight: FontWeight.w900,
     letterSpacing: 1.0
 );
+const settingOptions=TextStyle(
+    fontSize: 12,
+    color:Colors.black,
+    fontFamily: "montr",
+    fontWeight: FontWeight.w600,
+    letterSpacing: 1.0
+);

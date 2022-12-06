@@ -7,6 +7,8 @@ import 'package:mobile_to_mobile_mirroring_app/app/modules/home/widgets/access_c
 import 'package:mobile_to_mobile_mirroring_app/app/modules/home/widgets/rainbow_line.dart';
 import 'package:mobile_to_mobile_mirroring_app/app/modules/home/widgets/start_sharing.dart';
 import 'package:mobile_to_mobile_mirroring_app/app/modules/home/widgets/wifi_qr_scanner.dart';
+import 'package:mobile_to_mobile_mirroring_app/app/modules/setting_screen/views/setting_screen_view.dart';
+import 'package:mobile_to_mobile_mirroring_app/app/modules/wifi_qr_scanner/views/wifi_qr_scanner_view.dart';
 
 import '../controllers/home_controller.dart';
 
@@ -19,6 +21,9 @@ class HomeView extends GetView<HomeController> {
         elevation: 1,
         backgroundColor: Colors.white,
         leading: InkWell(
+          onTap: (){
+            Get.to(const SettingScreenView());
+          },
           child: Padding(
             padding: const EdgeInsets.all(18.0),
             child: SvgPicture.asset("Assets/svg/ng_bar_ic.svg"),
@@ -51,8 +56,12 @@ class HomeView extends GetView<HomeController> {
       body: Column(
         children:  [
            const RainbowLine(),
-          const Expanded(
-              child: WifiQrScanner()),
+           Expanded(
+              child: InkWell(
+                  onTap: (){
+                    Get.to(const WifiQrScannerView());
+                  },
+                  child: const WifiQrScanner())),
           const Expanded(
             flex: 2,
               child: StartScreenShare()),

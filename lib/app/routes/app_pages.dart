@@ -14,6 +14,8 @@ import '../modules/share_screen/bindings/share_screen_binding.dart';
 import '../modules/share_screen/views/share_screen_view.dart';
 import '../modules/splash/bindings/splash_binding.dart';
 import '../modules/splash/views/splash_view.dart';
+import '../modules/wifi_qr_scanner/bindings/wifi_qr_scanner_binding.dart';
+import '../modules/wifi_qr_scanner/views/wifi_qr_scanner_view.dart';
 
 part 'app_routes.dart';
 
@@ -57,6 +59,11 @@ class AppPages {
       name: _Paths.SETTING_SCREEN,
       page: () => const SettingScreenView(),
       binding: SettingScreenBinding(),
+    ),
+    GetPage(
+      name: _Paths.WIFI_QR_SCANNER,
+      page: () => const WifiQrScannerView(),
+      binding: WifiQrScannerBinding(),
     ),
   ];
 }
