@@ -9,6 +9,8 @@ class ShareScreenController extends GetxController {
   //TODO: Implement ShareScreenController
 
   RxBool switchValue = false.obs;
+  RxBool copyOrShare=false.obs;
+  RxBool sharingStared=false.obs;
   Rx<TextEditingController> pinController = TextEditingController().obs;
   @override
   void onInit() {
@@ -38,17 +40,19 @@ class ShareScreenController extends GetxController {
   }
   void shareCode(){
     Share.share("This is your Code : ${pinController.value.text}");
+    copyOrShare.value=true;
   }
   void copyCode(){
+
     Clipboard.setData(ClipboardData(text:pinController.value.text));
     Get.snackbar("Success","your code has been copied",
     backgroundColor: Colors.black87,
       snackPosition:SnackPosition.BOTTOM,
       snackStyle: SnackStyle.FLOATING,
       colorText: Colors.white
-
-
-
     );
+    copyOrShare.value=true;
   }
+
+
 }

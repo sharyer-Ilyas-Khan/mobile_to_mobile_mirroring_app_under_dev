@@ -130,4 +130,11 @@ const sharingStarted=TextStyle(
     fontWeight: FontWeight.w600,
     letterSpacing: 1.0
 );
+const waitingText=TextStyle(
+    fontSize: 11,
+    color:Colors.black26,
+    fontFamily: "montr",
+    fontWeight: FontWeight.w600,
+    letterSpacing: 0.0
+);
 

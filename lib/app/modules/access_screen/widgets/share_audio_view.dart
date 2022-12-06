@@ -5,12 +5,10 @@ import 'package:mobile_to_mobile_mirroring_app/app/data/text_styles.dart';
 import 'package:mobile_to_mobile_mirroring_app/app/modules/access_screen/controllers/access_screen_controller.dart';
 
 class AudioTile extends StatelessWidget {
-  AudioTile({Key? key}) : super(key: key);
-   var toggleValue = false.obs;
+ const  AudioTile({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     AccessScreenController controller=Get.put(AccessScreenController());
-    print(toggleValue.value);
     return Container(
       decoration:  const BoxDecoration(
         color: Colors.white,

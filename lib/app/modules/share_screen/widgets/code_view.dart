@@ -51,14 +51,14 @@ class CodeGeneratedView extends StatelessWidget {
                       readOnly: true,
                       //   focusedPinTheme: focusedPinTheme,
                     ),
-                    const SizedBox(width: 10,),
+                    const SizedBox(width: 5,),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(5.0),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          IconButton(onPressed:controller.copyCode, icon: Icon(Icons.copy,color: Colors.black54,)),
-                          IconButton(onPressed: controller.shareCode, icon: Icon(Icons.share,color: Colors.black54,)),
+                          IconButton(onPressed:controller.copyCode, icon:const  Icon(Icons.copy,color: Colors.black54,size: 20,)),
+                          IconButton(onPressed: controller.shareCode, icon:const  Icon(Icons.share,color: Colors.black54,size: 20,)),
 
                         ],
                       ),
@@ -71,9 +71,20 @@ class CodeGeneratedView extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 30,),
-        const Center(child:  Text("Sharing started!",style: sharingStarted,)),
+         Obx(() =>  Center(
+             child:  controller.copyOrShare.value?
+              Padding(
+               padding:  EdgeInsets.only(left:Get.width*0.15,right: Get.width*0.15),
+               child: const  Text("Please wait for a while, we are waiting for the other user to connect.",
+                 textAlign: TextAlign.center,style: waitingText,),
+             )
+                 :Container()),),
+        Obx(() =>   controller.sharingStared.value?
+        const Center(child:   Text("Sharing started!",style: sharingStarted,)):Container()),
         const SizedBox(height: 30,),
-        const Center(child:  SharingStartButton())
+        Obx(() =>   controller.sharingStared.value?
+            const Center(child:  SharingStartButton()):Container()),
+
       ],
     );
   }

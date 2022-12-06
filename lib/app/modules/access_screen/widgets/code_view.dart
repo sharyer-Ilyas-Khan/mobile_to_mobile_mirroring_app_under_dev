@@ -55,6 +55,17 @@ class CodeGeneratedView extends StatelessWidget {
                   Pinput(
                     controller: controller.pinController.value,
                     defaultPinTheme: defaultPinTheme,
+                    onChanged: (value){
+                      if(value.length<4){
+                        controller.isCodeAvailable.value=false;
+                      }
+                    },
+                    onCompleted: (value){
+                      if(value.isNotEmpty && value.length==4){
+                        controller.isCodeAvailable.value=true;
+                      }
+
+                    },
                     //   focusedPinTheme: focusedPinTheme,
                   ),
                   const SizedBox(width: 10,),
