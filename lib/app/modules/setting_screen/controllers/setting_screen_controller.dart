@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:mobile_to_mobile_mirroring_app/app/modules/dialogs/widgets/color_picker.dart';
 import 'package:mobile_to_mobile_mirroring_app/app/modules/dialogs/widgets/exit_app.dart';
 import 'package:mobile_to_mobile_mirroring_app/app/modules/dialogs/widgets/rate_us.dart';
 import 'package:share_plus/share_plus.dart';
@@ -11,6 +12,7 @@ class SettingScreenController extends GetxController {
   //TODO: Implement SettingScreenController
 
   final count = 0.obs;
+
   @override
   void onInit() {
     super.onInit();
@@ -53,6 +55,12 @@ void openDialog(tag){
     }
 
 
+}
+void openColorPicker(){
+  Get.dialog( const ColorPickerDiloge(),
+    barrierColor: Colors.transparent,
+
+  );
 }
   Future<void> launchUniversalLinkIos(String url) async {
     if (await canLaunchUrl(Uri.parse(url))) {

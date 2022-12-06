@@ -19,7 +19,7 @@ dependencies:
   in_app_review: ^2.0.6
   pinput: ^2.2.16
   qr_code_scanner: ^1.0.1
-
+  flutter_colorpicker: ^1.0.3
 
   flutter: 
     sdk: flutter

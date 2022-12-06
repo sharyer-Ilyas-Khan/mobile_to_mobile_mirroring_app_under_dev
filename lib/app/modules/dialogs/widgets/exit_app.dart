@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
@@ -29,14 +31,13 @@ class ExitDialog extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     const Spacer(),
-                    const Text("Are you sure you want to Quit?",style:cardHeading,),
+                    const Text("Are you sure you want to Quit?",style:cardHeading),
                     const Spacer(),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         InkWell(
                           onTap: (){
-                        SystemNavigator.pop();
                           },
                           child: Container(
                             height: Get.height*0.045,
