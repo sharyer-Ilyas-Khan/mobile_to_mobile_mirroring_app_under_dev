@@ -7,7 +7,6 @@ class PointerColor extends StatelessWidget {
   final String? svgIcon;
   final String? title;
   const PointerColor({this.title,this.svgIcon,Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -20,7 +19,22 @@ class PointerColor extends StatelessWidget {
               child: SvgPicture.asset("Assets/svg/$svgIcon.svg",height: 18,),
             ),
             title: Text(title!,style: settingOptions,),
-            trailing: const Icon(Icons.arrow_forward_ios_rounded,size: 14,),
+            trailing: Container(
+              height: 35,width: 35,
+
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(4),
+                color: Colors.red,
+                border: Border.all(width: 5,color: Colors.white),
+                boxShadow: const [
+                  BoxShadow(
+                    color: Colors.black12,
+                    spreadRadius: 1,
+                    blurRadius: 4
+                  )
+                ]
+              ),
+            ),
 
           ),
           const Padding(

@@ -11,6 +11,7 @@ abstract class Routes {
   static const PREMIUM_SCREEN = _Paths.PREMIUM_SCREEN;
   static const SETTING_SCREEN = _Paths.SETTING_SCREEN;
   static const WIFI_QR_SCANNER = _Paths.WIFI_QR_SCANNER;
+  static const DIALOGS = _Paths.DIALOGS;
 }
 
 abstract class _Paths {
@@ -23,4 +24,5 @@ abstract class _Paths {
   static const PREMIUM_SCREEN = '/premium-screen';
   static const SETTING_SCREEN = '/setting-screen';
   static const WIFI_QR_SCANNER = '/wifi-qr-scanner';
+  static const DIALOGS = '/dialogs';
 }

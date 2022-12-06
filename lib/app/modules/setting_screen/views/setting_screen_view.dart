@@ -42,7 +42,6 @@ class SettingScreenView extends GetView<SettingScreenController> {
             ),
           )
         ],
-
         title:const Text("Settings",style: readCodeTitle,),
 
         centerTitle: false,
@@ -52,13 +51,13 @@ class SettingScreenView extends GetView<SettingScreenController> {
           const RainbowLine(),
           Expanded(child: ListView(
             children: const [
-              PointerColor(title: "Pointer color",svgIcon: "color_ic",),
+              PointerColor(title: "Pointer settings",svgIcon: "color_ic",),
               // PointerSize(title: "Pointer color",svgIcon: "pointer_ic",),
-              OptionTilesForSetting(title: "Feedback",svgIcon: "feedback_ic",),
-              OptionTilesForSetting(title: "Rate us",svgIcon: "star_ic",),
-              OptionTilesForSetting(title: "Share App",svgIcon: "share_ic",),
-              OptionTilesForSetting(title: "Privacy policy",svgIcon: "privacy_ic",),
-              OptionTilesForSetting(title: "Exit",svgIcon: "exit",),
+              OptionTilesForSetting(title: "Feedback",svgIcon: "feedback_ic",tag: "feedback",),
+              OptionTilesForSetting(title: "Rate us",svgIcon: "star_ic",tag: "rateUs",),
+              OptionTilesForSetting(title: "Share App",svgIcon: "share_ic",tag: "share",),
+              OptionTilesForSetting(title: "Privacy policy",svgIcon: "privacy_ic",tag: "privacy",),
+              OptionTilesForSetting(title: "Exit",svgIcon: "exit",tag: "exit",),
 
             ],
           ))

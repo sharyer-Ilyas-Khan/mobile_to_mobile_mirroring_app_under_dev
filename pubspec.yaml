@@ -20,6 +20,7 @@ dependencies:
   pinput: ^2.2.16
   qr_code_scanner: ^1.0.1
 
+
   flutter: 
     sdk: flutter
 

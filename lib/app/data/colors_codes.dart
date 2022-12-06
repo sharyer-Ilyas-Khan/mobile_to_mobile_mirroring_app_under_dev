@@ -12,4 +12,5 @@ abstract class AppColors{
    static const Color codeCardColor= Color(0xffF6F7F8);
    static const Color infoTilePremiumColor= Color(0xff5FCCB9);
    static const Color scannerColor= Color(0xffE1E1E1);
+   static const Color feedbackColor= Color(0xffF6F9FF);
 }

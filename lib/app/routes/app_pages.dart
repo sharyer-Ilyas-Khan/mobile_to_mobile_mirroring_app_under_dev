@@ -2,6 +2,8 @@ import 'package:get/get.dart';
 
 import '../modules/access_screen/bindings/access_screen_binding.dart';
 import '../modules/access_screen/views/access_screen_view.dart';
+import '../modules/dialogs/bindings/dialogs_binding.dart';
+import '../modules/dialogs/views/dialogs_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/info_screen/bindings/info_screen_binding.dart';
@@ -64,6 +66,11 @@ class AppPages {
       name: _Paths.WIFI_QR_SCANNER,
       page: () => const WifiQrScannerView(),
       binding: WifiQrScannerBinding(),
+    ),
+    GetPage(
+      name: _Paths.DIALOGS,
+      page: () => const DialogsView(),
+      binding: DialogsBinding(),
     ),
   ];
 }
