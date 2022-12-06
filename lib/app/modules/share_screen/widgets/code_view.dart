@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_to_mobile_mirroring_app/app/modules/share_screen/widgets/sharingStartButton.dart';
+import 'package:mobile_to_mobile_mirroring_app/app/modules/share_screen/widgets/sharing_start_button.dart';
 import 'package:pinput/pinput.dart';
 import 'package:get/get.dart';
 import 'package:mobile_to_mobile_mirroring_app/app/data/colors_codes.dart';

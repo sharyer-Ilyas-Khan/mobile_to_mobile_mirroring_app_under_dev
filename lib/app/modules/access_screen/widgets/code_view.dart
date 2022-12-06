@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:mobile_to_mobile_mirroring_app/app/modules/access_screen/widgets/connectButton.dart';
+import 'package:mobile_to_mobile_mirroring_app/app/modules/access_screen/widgets/connect_button.dart';
 import 'package:pinput/pinput.dart';
 import 'package:get/get.dart';
 import 'package:mobile_to_mobile_mirroring_app/app/data/colors_codes.dart';

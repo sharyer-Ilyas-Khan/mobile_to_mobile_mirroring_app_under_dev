@@ -8,6 +8,7 @@ import 'package:mobile_to_mobile_mirroring_app/app/data/text_styles.dart';
 import 'package:mobile_to_mobile_mirroring_app/app/modules/share_screen/widgets/code_view.dart';
 import 'package:mobile_to_mobile_mirroring_app/app/modules/share_screen/widgets/share_audio_view.dart';
 
+import '../../premium_screen/views/premium_screen_view.dart';
 import '../controllers/share_screen_controller.dart';
 
 class ShareScreenView extends GetView<ShareScreenController> {
@@ -35,7 +36,9 @@ class ShareScreenView extends GetView<ShareScreenController> {
         ),
         actions: [
           InkWell(
-            onTap: (){},
+            onTap: (){
+              Get.to(const PremiumScreenView());
+            },
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Lottie.asset("Assets/lottie/crown_lottie.json",width: 40),

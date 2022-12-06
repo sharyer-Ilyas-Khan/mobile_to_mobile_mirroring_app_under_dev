@@ -8,6 +8,8 @@ abstract class Routes {
   static const INFO_SCREEN = _Paths.INFO_SCREEN;
   static const SHARE_SCREEN = _Paths.SHARE_SCREEN;
   static const ACCESS_SCREEN = _Paths.ACCESS_SCREEN;
+  static const PREMIUM_SCREEN = _Paths.PREMIUM_SCREEN;
+  static const SETTING_SCREEN = _Paths.SETTING_SCREEN;
 }
 
 abstract class _Paths {
@@ -17,4 +19,6 @@ abstract class _Paths {
   static const INFO_SCREEN = '/info-screen';
   static const SHARE_SCREEN = '/share-screen';
   static const ACCESS_SCREEN = '/access-screen';
+  static const PREMIUM_SCREEN = '/premium-screen';
+  static const SETTING_SCREEN = '/setting-screen';
 }

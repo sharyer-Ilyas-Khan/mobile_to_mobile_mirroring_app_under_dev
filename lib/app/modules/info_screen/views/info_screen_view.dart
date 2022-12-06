@@ -5,8 +5,8 @@ import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 
 import 'package:mobile_to_mobile_mirroring_app/app/data/text_styles.dart';
-import 'package:mobile_to_mobile_mirroring_app/app/modules/info_screen/widgets/continueButton.dart';
-import 'package:mobile_to_mobile_mirroring_app/app/modules/info_screen/widgets/infoTile.dart';
+import 'package:mobile_to_mobile_mirroring_app/app/modules/info_screen/widgets/continue_button.dart';
+import 'package:mobile_to_mobile_mirroring_app/app/modules/info_screen/widgets/info_tile.dart';
 import '../controllers/info_screen_controller.dart';
 
 class InfoScreenView extends GetView<InfoScreenController> {

@@ -137,4 +137,25 @@ const waitingText=TextStyle(
     fontWeight: FontWeight.w600,
     letterSpacing: 0.0
 );
+const  oneTimePayment=TextStyle(
+    fontSize: 10,
+    color:Colors.black54,
+    fontFamily: "montr",
+    fontWeight: FontWeight.w900,
+    letterSpacing:1
+);
 
+const premiumHeading=TextStyle(
+    fontSize: 23,
+    color:Colors.black,
+    fontFamily: "montb",
+    fontWeight: FontWeight.w900,
+    letterSpacing: 1.0
+);
+const premiumSubHeading=TextStyle(
+    fontSize: 23,
+    color:AppColors.splashHeadingColor,
+    fontFamily: "montb",
+    fontWeight: FontWeight.w900,
+    letterSpacing: 1.0
+);

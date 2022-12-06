@@ -10,4 +10,5 @@ abstract class AppColors{
    static const Color rainBlueColor= Color(0xff226FF2);
    static const Color darkBlue= Color(0xff038FF4);
    static const Color codeCardColor= Color(0xffF6F7F8);
+   static const Color infoTilePremiumColor= Color(0xff5FCCB9);
 }
