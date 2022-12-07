@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
+import 'package:mobile_to_mobile_mirroring_app/app/modules/access_screen/controllers/access_room_controller.dart';
 import 'package:mobile_to_mobile_mirroring_app/app/modules/access_screen/widgets/code_view.dart';
 import 'package:mobile_to_mobile_mirroring_app/app/modules/access_screen/widgets/connect_button.dart';
 import 'package:mobile_to_mobile_mirroring_app/app/modules/access_screen/widgets/share_audio_view.dart';
@@ -16,6 +17,7 @@ class AccessScreenView extends GetView<AccessScreenController> {
   const AccessScreenView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    AccessRoomController accessRoomController=Get.put(AccessRoomController());
     return Scaffold(
         backgroundColor: Colors.white,
         resizeToAvoidBottomInset: false,

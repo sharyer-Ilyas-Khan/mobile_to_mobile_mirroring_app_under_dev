@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 import 'package:mobile_to_mobile_mirroring_app/app/data/colors_codes.dart';
 import 'package:mobile_to_mobile_mirroring_app/app/data/text_styles.dart';
+import 'package:mobile_to_mobile_mirroring_app/app/modules/share_screen/controllers/create_room_controller.dart';
 import 'package:mobile_to_mobile_mirroring_app/app/modules/share_screen/widgets/code_view.dart';
 import 'package:mobile_to_mobile_mirroring_app/app/modules/share_screen/widgets/share_audio_view.dart';
 
@@ -15,6 +16,7 @@ class ShareScreenView extends GetView<ShareScreenController> {
   const ShareScreenView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    CreateRoomController createRoomController=Get.put(CreateRoomController());
     return Scaffold(
       backgroundColor: Colors.white,
       resizeToAvoidBottomInset: false,

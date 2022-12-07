@@ -6,15 +6,19 @@ import 'package:mobile_to_mobile_mirroring_app/app/modules/access_screen/control
 import 'package:mobile_to_mobile_mirroring_app/app/modules/access_screen/views/access_screen_view.dart';
 import 'package:mobile_to_mobile_mirroring_app/app/modules/share_screen/views/share_screen_view.dart';
 import 'package:pinput/pinput.dart';
+
+import '../controllers/access_room_controller.dart';
 class ConnectButton extends StatelessWidget {
   const ConnectButton({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
   AccessScreenController controller=Get.put(AccessScreenController());
+  AccessRoomController accessRoomController=Get.put(AccessRoomController());
     return InkWell(
-      onTap:(){
-        print(controller.pinController.value.length);
+      onTap:()async{
+      // await accessRoomController.connectionRequest();
+       accessRoomController.getAccessToken();
       },
       child: Obx(
          ()=> Container(
