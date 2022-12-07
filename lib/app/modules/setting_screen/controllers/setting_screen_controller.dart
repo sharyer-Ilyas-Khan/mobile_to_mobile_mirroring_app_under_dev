@@ -11,7 +11,8 @@ import '../../dialogs/widgets/feedback.dart';
 class SettingScreenController extends GetxController {
   //TODO: Implement SettingScreenController
 
-  final count = 0.obs;
+final RxDouble sliderValue=5.0.obs;
+final RxBool openPointerSize=false.obs;
 
   @override
   void onInit() {
@@ -26,6 +27,10 @@ class SettingScreenController extends GetxController {
   @override
   void onClose() {
     super.onClose();
+  }
+
+  void openPointerDialog(){
+    openPointerSize.value=!openPointerSize.value;
   }
 void openDialog(tag){
     if(tag=="feedback"){
@@ -57,10 +62,13 @@ void openDialog(tag){
 
 }
 void openColorPicker(){
-  Get.dialog( const ColorPickerDiloge(),
+  Get.dialog( const ColorPickerDialog(),
     barrierColor: Colors.transparent,
 
   );
+}
+void sliderOnChange(value){
+    sliderValue.value=value;
 }
   Future<void> launchUniversalLinkIos(String url) async {
     if (await canLaunchUrl(Uri.parse(url))) {

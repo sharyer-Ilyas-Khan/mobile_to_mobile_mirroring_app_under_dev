@@ -51,8 +51,8 @@ class SettingScreenView extends GetView<SettingScreenController> {
           const RainbowLine(),
           Expanded(child: ListView(
             children: const [
-              PointerColor(title: "Pointer settings",svgIcon: "color_ic",),
-              // PointerSize(title: "Pointer color",svgIcon: "pointer_ic",),
+              PointerColor(title: "Pointer color",svgIcon: "color_ic",),
+              PointerSize(title: "Pointer size",svgIcon: "pointer_ic",),
               OptionTilesForSetting(title: "Feedback",svgIcon: "feedback_ic",tag: "feedback",),
               OptionTilesForSetting(title: "Rate us",svgIcon: "star_ic",tag: "rateUs",),
               OptionTilesForSetting(title: "Share App",svgIcon: "share_ic",tag: "share",),

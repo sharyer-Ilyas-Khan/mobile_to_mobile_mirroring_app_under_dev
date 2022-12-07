@@ -21,6 +21,8 @@ dependencies:
   qr_code_scanner: ^1.0.1
   flutter_colorpicker: ^1.0.3
 
+  twilio_programmable_video: ^1.0.1
+
   flutter: 
     sdk: flutter
 

@@ -5,6 +5,8 @@ PODS:
   - MTBBarcodeScanner (5.0.11)
   - path_provider_ios (0.0.1):
     - Flutter
+  - permission_handler_apple (9.0.4):
+    - Flutter
   - qr_code_scanner (0.2.0):
     - Flutter
     - MTBBarcodeScanner
@@ -14,6 +16,10 @@ PODS:
     - Flutter
   - store_checker (0.0.1):
     - Flutter
+  - twilio_programmable_video (1.0.1):
+    - Flutter
+    - TwilioVideo (~> 4.6)
+  - TwilioVideo (4.6.3)
   - url_launcher_ios (0.0.1):
     - Flutter
 
@@ -21,15 +27,18 @@ DEPENDENCIES:
   - Flutter (from `Flutter`)
   - in_app_review (from `.symlinks/plugins/in_app_review/ios`)
   - path_provider_ios (from `.symlinks/plugins/path_provider_ios/ios`)
+  - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
   - qr_code_scanner (from `.symlinks/plugins/qr_code_scanner/ios`)
   - share_plus (from `.symlinks/plugins/share_plus/ios`)
   - smart_auth (from `.symlinks/plugins/smart_auth/ios`)
   - store_checker (from `.symlinks/plugins/store_checker/ios`)
+  - twilio_programmable_video (from `.symlinks/plugins/twilio_programmable_video/ios`)
   - url_launcher_ios (from `.symlinks/plugins/url_launcher_ios/ios`)
 
 SPEC REPOS:
   trunk:
     - MTBBarcodeScanner
+    - TwilioVideo
 
 EXTERNAL SOURCES:
   Flutter:
@@ -38,6 +47,8 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/in_app_review/ios"
   path_provider_ios:
     :path: ".symlinks/plugins/path_provider_ios/ios"
+  permission_handler_apple:
+    :path: ".symlinks/plugins/permission_handler_apple/ios"
   qr_code_scanner:
     :path: ".symlinks/plugins/qr_code_scanner/ios"
   share_plus:
@@ -46,6 +57,8 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/smart_auth/ios"
   store_checker:
     :path: ".symlinks/plugins/store_checker/ios"
+  twilio_programmable_video:
+    :path: ".symlinks/plugins/twilio_programmable_video/ios"
   url_launcher_ios:
     :path: ".symlinks/plugins/url_launcher_ios/ios"
 
@@ -54,12 +67,15 @@ SPEC CHECKSUMS:
   in_app_review: 318597b3a06c22bb46dc454d56828c85f444f99d
   MTBBarcodeScanner: f453b33c4b7dfe545d8c6484ed744d55671788cb
   path_provider_ios: 14f3d2fd28c4fdb42f44e0f751d12861c43cee02
+  permission_handler_apple: 44366e37eaf29454a1e7b1b7d736c2cceaeb17ce
   qr_code_scanner: bb67d64904c3b9658ada8c402e8b4d406d5d796e
   share_plus: 056a1e8ac890df3e33cb503afffaf1e9b4fbae68
   smart_auth: 4bedbc118723912d0e45a07e8ab34039c19e04f2
   store_checker: 359c5051d9ec30ff0a8fa39eb5ec9df021bb745d
+  twilio_programmable_video: 8263cc6acd077e9854a0a4493d98f846070c0720
+  TwilioVideo: 4afaac028c5886f2f3b313a9fcc146a6b7ca34e2
   url_launcher_ios: 839c58cdb4279282219f5e248c3321761ff3c4de
 
-PODFILE CHECKSUM: 7368163408c647b7eb699d0d788ba6718e18fb8d
+PODFILE CHECKSUM: e07bc58118d56dc5cd2d77c765e9fa96e23ad183
 
 COCOAPODS: 1.11.3

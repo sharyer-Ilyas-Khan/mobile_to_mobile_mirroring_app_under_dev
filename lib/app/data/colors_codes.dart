@@ -13,5 +13,6 @@ abstract class AppColors{
    static const Color infoTilePremiumColor= Color(0xff5FCCB9);
    static const Color scannerColor= Color(0xffE1E1E1);
    static const Color feedbackColor= Color(0xffF6F9FF);
+   static const Color colorPicker= Color(0xffEAEBF3);
    static const Color pointerColor= Color(0xffE83022);
 }
